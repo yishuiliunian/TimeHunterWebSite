@@ -1,11 +1,13 @@
 Rails.application.routes.draw do
-  get 'static_pages/home'
 
-  get 'static_pages/about'
+  get 'static_pages/author'
 
   get 'static_pages/help'
 
   root to: 'static_pages#home'
+  match '/about', to:"static_pages#about", via:'get'
+  match '/author', to:"static_pages#author", via:'get'
+  match '/help', to:"static_pages#help", via:'get'
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 

@@ -1,12 +1,13 @@
 <header class="navbar navbar-fixed-top navbar-inverse">
   <div class="navbar-inner">
     <div class="container">
-      <%= link_to "时间猎人", '#', id: "logo" %>
+      <%= link_to "时间猎人", root_path, id: "logo" %>
       <nav>
         <ul class="nav pull-right">
-          <li><%= link_to "首页",    '#' %></li>
-          <li><%= link_to "帮助",    '#' %></li>
-          <li><%= link_to "关于", '#' %></li>
+          <li><%= link_to "首页",    root_path %></li>
+          <li><%= link_to "帮助",    help_path %></li>
+          <li><%= link_to "关于", about_path %></li>
+          <li><%= link_to "作者", author_path %></li>
         </ul>
       </nav>
     </div>
